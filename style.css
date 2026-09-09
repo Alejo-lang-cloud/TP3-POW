@@ -1,34 +1,33 @@
-* {
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-}
+* {     
+    margin: 0;     
+    padding: 0;     
+    box-sizing: border-box; 
+} 
 
-.tarjeta{
-    max-width: 400px;
-    justify-content: center;
+body {
+    /*fondo de madera en toda la pantalla*/
+    background-image: url('./recursos/fondo_madera.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    /*centra todo los contenedores*/
     display: flex;
-}
-
-.contenedor {
-    position:relative;
-    display:inline-block;
+    justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
 }
 
-.img-fondo {
+.tarjeta {     
     width: 100%;
-    display:block;
+    max-width: 450px; 
+    background-color: white;
 }
 
-.img-pizza{
-    width: 70%;
-    top: 5%;
-    left: 50%;
-    position: absolute;
-    transform: translateX(-50%); /*centra horizontalmente*/
-    z-index: 10; /*apilamiento: asegura que esté al frente*/
-    border-radius: 5%;
+.img-pizza {     
+    width: 100%;     
+    display: block; 
 }
 
 .tarjeta-contenido {  
@@ -37,6 +36,7 @@
     text-align: center; 
 }
 
+
 .tarjeta-contenido hr {
     border: none;
     border-top: 1px solid #ccc;
@@ -44,7 +44,7 @@
 }
 
 .tarjeta-contenido p {
-    color: #555;
+    color: #5f5d5d;
     line-height: 1.5;
     text-align: left;
     margin-bottom: 20px;
@@ -54,3 +54,4 @@
     display: block;
     text-align: left;
 }
+
