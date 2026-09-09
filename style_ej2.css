@@ -1,6 +1,6 @@
 
 .caja-gris{
-    background-color: grey;
+    background-color: rgb(182, 182, 182);
     border-radius: 6px;
 }
 
@@ -14,7 +14,7 @@
     display:flex;
     width: 100%;
     height: 70px;
-    background-color: rgb(5, 228, 191);
+    background-color: rgb(2, 189, 158);
     border-radius: 8px;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,7 @@
     display:flex;
     gap:15px;
     width: 100%;
-    height: 300px;
+    height: 350px;
     border-radius: 8px;
     margin-top: 1%;
 }
@@ -35,28 +35,46 @@
 .contenedor-a{
     width: 100%;
     height: auto;
-    background-color: rgb(5, 228, 191);
+    background-color: rgb(2, 189, 158);
     border-radius: 8px;
     justify-content: center;
     align-items: center;
 }
 
 .contenedor-s{
-    width: 100%;
+    width: 250%;
     height: auto;
-    background-color: rgb(5, 228, 191);
+    background-color: rgb(2, 189, 158);
     border-radius: 8px;
     justify-content: center;
     align-items: center;
 }
 
+.caja-gris-article{
+    width: 80%;
+    height: 70%;
+    background-color: grey;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .contenedor-n{
     width: 100%;
     height: auto;
-    background-color: rgb(5, 228, 191);
+    background-color: rgb(2, 189, 158);
     border-radius: 8px;
     justify-content: center;
     align-items: center;
+}
+
+.contenedor-footer{
+    background-color: rgb(2, 189, 158);
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display:flex;
+    margin-top: 1%;
+    justify-content: center;
 }
 
 .texto {
