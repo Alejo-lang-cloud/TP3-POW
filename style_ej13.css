@@ -1,0 +1,62 @@
+.contenedor-general{
+    width: 30%;
+    height: auto;
+}
+
+.contenedor-general h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: rgb(192, 192, 192);
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.teclado {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.contenedor-display {
+    display: block;
+    background-color: black;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.contenedor-display-acum {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: right;
+    height: 30%;
+}
+
+.contenedor-display-numactual {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: right;
+    height: 60%;
+}
+
+Button {
+    border: 1px solid white;
+    width: calc(100 / 4);
+    aspect-ratio: 1 / 1;
+    color: white;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.boton-numero{
+    background-color: blue;
+}
+
+.boton-operador { /*+ - x / */
+    background-color: maroon;
+}
+
+.boton-accion {
+    background-color: orangered;
+}
+
+.boton-igual {
+    background-color: green;
+}
