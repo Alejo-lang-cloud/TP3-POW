@@ -33,3 +33,36 @@ function elegirOperacion(operando) {
     actualizarDisplay();
 }
 
+function calcular() {
+    let resultado;
+    const anterior = parseFloat(operandoAnterior);
+    const actual = parseFloat(operandoActual);
+
+    if (isNaN(anterior) || isNaN(actual)) { /*si no hay numeros, no hacemos nada*/
+        return;
+    }
+
+    switch (operacion) {
+        case '+':
+            resultado = anterior+actual;
+            break;
+        case '-':
+            resultado = anterior-actual;
+            break;
+        case 'x':
+        case '*':
+            resultado = anterior * actual;
+            break;
+        case '/':
+            resultado = actual === 0 ? 'Error' : anterior / actual; /*verificamos la division por cero*/ 
+            break;
+        default:
+            return;
+    }
+
+    operandoActual = resultado.toString();  /*pasamos a string el resultado y actualizamos el display*/ 
+    operacion = null;
+    operandoAnterior = '';
+    actualizarDisplay(); 
+}
+
