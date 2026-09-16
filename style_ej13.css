@@ -1,7 +1,7 @@
 .contenedor-general{
     width: 30%;
     height: auto;
-    margin: 0 auto;
+    margin: 0 auto; /*centrar horizontalmente, el 'auto' reparte los espacios equitativamente*/
 }
 
 .contenedor-general h1 {
