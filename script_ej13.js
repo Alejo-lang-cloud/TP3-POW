@@ -11,3 +11,25 @@ function actualizarDisplay() {
     displayAcum.innerText = operacion ? `${operandoAnterior} ${operacion}` : ''; /*operacion ? evalua si el usuario apretó alguna operacion
     en caso verdadero, concatena con ` ` sino deja en blanco */
 }
+
+function agregarNumero(numero) {
+    if (numero === '.' && operandoActual.includes('.')) return;
+    if (operandoActual === '0' && numero !== '.') {
+        operandoActual = numero;
+    } else {
+        operandoActual += numero; /*Concatenación 5+2 = 52*/ 
+    }
+    actualizarDisplay();
+}
+
+function elegirOperacion(operando) {
+    if (operandoActual === '') return;
+    if (operandoAnterior !== '') {
+        calcular();
+    }
+    operacion = operando;
+    operandoAnterior = operandoActual;
+    operandoActual = '';
+    actualizarDisplay();
+}
+
