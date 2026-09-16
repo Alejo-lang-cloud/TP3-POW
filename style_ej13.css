@@ -1,6 +1,7 @@
 .contenedor-general{
     width: 30%;
     height: auto;
+    margin: 0 auto;
 }
 
 .contenedor-general h1 {
