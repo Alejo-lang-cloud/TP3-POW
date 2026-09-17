@@ -1,6 +1,7 @@
 .contenedor-general{
     width: 30%;
     height: auto;
+    margin: 0 auto; /*centrar horizontalmente, el 'auto' reparte los espacios equitativamente*/
 }
 
 .contenedor-general h1 {
@@ -34,6 +35,9 @@
     font-family: 'Courier New', Courier, monospace;
     text-align: right;
     height: 60%;
+    color: white;
+    padding-right: 5px;
+    box-sizing: border-box;
 }
 
 Button {
