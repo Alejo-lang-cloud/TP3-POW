@@ -1,11 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacto - Trabajo Práctico</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome para los íconos de redes sociales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-    
+<body class="bg-light">
+
+    <div class="container py-5">
+        <!-- Tarjeta contenedora para darle un fondo prolijo estilo tarjeta -->
+        <div class="card shadow-sm p-4 p-md-5 border-0">
+            <div class="row g-5 align-items-start">
+                
+                <!-- COLUMNA IZQUIERDA: Información de contacto y ubicación -->
+                <div class="col-md-6">
+                    <h2 class="h3 fw-bold text-uppercase mb-4">Ubicación</h2>
+                    <p class="text-muted mb-4">
+                        28 Jackson Blvd Ste 1020 Chicago<br>
+                        IL 60604-2340
+                    </p>
+
+                    <h3 class="h4 fw-bold text-uppercase mb-3">Síguenos</h3>
+                    <!-- Redes sociales con íconos -->
+                    <div class="d-flex gap-3 mb-4">
+                        <a href="#" class="text-dark fs-5" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-dark fs-5" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-dark fs-5" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-dark fs-5" aria-label="Google Plus"><i class="fab fa-google-plus-g"></i></a>
+                    </div>
+
+                    <p class="text-muted small mb-0">&copy; 2018 Política de privacidad</p>
+                </div>
+
+                <!-- COLUMNA DERECHA: Formulario de contacto -->
+                <div class="col-md-6">
+                    <h2 class="h3 fw-bold mb-4">Formulario de contacto</h2>
+                    
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Enter your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Enter a valid email address" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-outline-dark px-4">Enviar</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle (Opcional si usas componentes interactivos) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
