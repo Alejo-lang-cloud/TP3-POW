@@ -29,7 +29,7 @@ formCuit.addEventListener("submit", function(event) {
 
     //alerta resultado
     if (esValido) {
-        mostrarAlerta("¡Verdadero! El número de CUIL/CUIT ingresado es <strong>válido</strong>.", "alert-success");
+        mostrarAlerta("El número de CUIL/CUIT ingresado es <strong>válido</strong>.", "alert-success");
     } else {
         mostrarAlerta("Error: El número de CUIL/CUIT <strong>no es válido</strong> (dígito verificador incorrecto o tipo no admitido).", "alert-danger");
     }
