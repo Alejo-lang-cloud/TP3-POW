@@ -1,10 +1,10 @@
-/*busca en el HTML la primera etiqueta con las clases de los contenedores de display */
+//contenedores del display
 const displayAcum = document.querySelector('.contenedor-display-acum');
 const displayNumActual = document.querySelector('.contenedor-display-numactual');
-
+//inicializados en cero
 let operandoActual = ''; 
 let operandoAnterior = '';
-let operacion = null; /*inicialmente*/
+let operacion = null; 
 
 function actualizarDisplay() {
     displayNumActual.innerText = operandoActual;
@@ -17,7 +17,7 @@ function agregarNumero(numero) {
     if (operandoActual === '0' && numero !== '.') {
         operandoActual = numero;
     } else {
-        operandoActual += numero; /*Concatenación 5+2 = 52*/ 
+        operandoActual += numero; //concatenacion 5+2 = 52 
     }
     actualizarDisplay();
 }
@@ -38,7 +38,7 @@ function calcular() {
     const anterior = parseFloat(operandoAnterior);
     const actual = parseFloat(operandoActual);
 
-    if (isNaN(anterior) || isNaN(actual)) { /*si no hay numeros, no hacemos nada*/
+    if (isNaN(anterior) || isNaN(actual)) { //si no hay numeros, no hacemos nada
         return;
     }
 
@@ -54,13 +54,13 @@ function calcular() {
             resultado = anterior * actual;
             break;
         case '/':
-            resultado = actual === 0 ? 'Sintax Error' : anterior / actual; /*verificamos la division por cero*/ 
+            resultado = actual === 0 ? 'Sintax Error' : anterior / actual; //verificamos la division por cero
             break;
         default:
             return;
     }
 
-    operandoActual = resultado.toString();  /*pasamos a string el resultado y actualizamos el display*/ 
+    operandoActual = resultado.toString();  //pasamos a string el resultado y actualizamos el display
     operacion = null;
     operandoAnterior = '';
     actualizarDisplay(); 
@@ -96,7 +96,7 @@ document.getElementById('C').addEventListener('click', () => {
     actualizarDisplay();
 });
 
-//boton CE (borra la ENTRADA ACTUAL)
+//boton CE (borra entrada actual)
 document.getElementById('CE').addEventListener('click', () => {
     operandoActual = '0';
     actualizarDisplay();
